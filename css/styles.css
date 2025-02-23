@@ -156,7 +156,7 @@ h3 {
 /* navbar */
 
 .nav {
-    padding: 1rem 1.3rem;
+    padding: 1rem 1.5rem;
     display: flex;
     flex-wrap: wrap;
     justify-content: space-between;
@@ -208,24 +208,43 @@ h3 {
     }
 }
 
+/* footer */
+
+.footer {
+    text-align: center;
+    padding: 2rem 0;
+    background-color: var(--color-body);
+    color: #fff;
+    margin-top: 2rem;
+}
+
 /* hero */
 
 .hero {
     padding: 1.5rem;
     gap: 2rem;
+    max-width: 90vw;
+    margin: 3rem auto;
 }
 
 .hero__content {
+    align-self: center;
 }
 
 .hero p {
-    margin: 2rem 0;
+    margin: 1.5rem 0 3rem 0;
 }
 
 .hero img {
     width: 100%;
     border-radius: 5px;
     align-self: center;
+}
+
+@media screen and (max-width: 768px) {
+    .hero {
+        max-width: 100vw;
+    }
 }
 
 /* card */
@@ -250,4 +269,12 @@ h3 {
     padding: 1.5rem;
     gap: 1.5rem;
     row-gap: 6rem;
+    max-width: 90vw;
+    margin: 0 auto;
+}
+
+@media screen and (max-width: 768px) {
+    .plans {
+        max-width: 100vw;
+    }
 }
